@@ -1,0 +1,26 @@
+# Personal Blog Change-Log
+
+## Background
+
+  This site will operate as a personal blog and a place to build and test web applications I build.
+  This file will act as a change log for a more detailed understanding of changes made over time.
+  The updates will reflect pushes to Github and will be used to track the evolution of the project.
+  Each entry will include a brief description of the changes made, along with the date and author of the change.
+
+## Rules:
+  1. Each entry should be concise and clearly describe the change made.
+  2. Entries should be listed in reverse chronological order, with the most recent changes at the top
+  3. Each entry should include the date of the change, the author, and a brief description
+  4. Avoid using technical jargon or overly complex language; the goal is to make the change log accessible to all team members and stakeholders.
+  5. Before pushing changes to the repository, ensure that the change log is updated with the latest modifications.
+
+## Entries
+
+Entry:  1
+Date:   10/23/26
+Author: Jacob St John
+Version:0.0.1
+
+  This is rework of the repository, I realize things are a mess and are not built with the proper foundation. Old files are found ./DEFUNCT/0.0.1-Move
+
+- change.log created and will feature
