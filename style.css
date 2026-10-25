@@ -1,20 +1,38 @@
+.cabin-<uniquifier> {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
 body {
     background-color: antiquewhite;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cabin", Helvetica, sans-serif;
+}
+
+a {
+    color: #3E3E81;
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: #19194d;
+    color: #dfdfee;
     padding: 10px;
 }
 header h1 {
+    font-family: "Cabin", 'Arial Narrow Bold', sans-serif;
+    
     text-align: center;
-    text-shadow: ;
+    text-shadow: 2px 1px 1px #6262b5;
 }
 
 header h2 {
+    font-family: "Cabin", 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
 
@@ -23,21 +41,28 @@ header nav {
 }
 
 #content {
-    background-color: white;
-    color: black;
+    background-color: #dfdfee;
+    color: #19194d;
     padding: 10px;
 }
 
 .content1, .content2, .content3, .content4 {
-    background-color: blanchedalmond;
-    margin: 10px;
-    padding: 20px;
+    background-color: #3E3E81;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 5%;
+    color: #b6b6de;
+    text-shadow: 1px 1px 0px #19194d;
 }
 
 .content2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: #6262b5;
+    color: #19194d;
+    text-shadow: 0px 0px 0px #6262b5;
 }
 
 .content2 > h2 {
@@ -45,15 +70,15 @@ header nav {
 }
 
 .column1x2, .column2x2 {
-    background-color: lightgrey;
+    background-color: #8c8ccc;
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
-    flex: 1 1 300px;
+    flex: 1 1 20%;
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: #19194d;
+    color: #dfdfee;
     padding: 10px;
 }
