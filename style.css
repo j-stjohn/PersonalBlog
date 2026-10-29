@@ -15,8 +15,26 @@ body {
     font-family: "Cabin", Helvetica, sans-serif;
 }
 
-a {
-    color: #3E3E81;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex;
+    gap: 8px;
+}
+
+nav ul li a {
+    font-size: larger;
+    color: #dfdfee;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #6262b5;
+    color: #dfdfee;
 }
 
 header {
@@ -48,12 +66,37 @@ header nav {
 
 .content1, .content2, .content3, .content4 {
     background-color: #3E3E81;
+    border: solid #b6b6de 3px;
+    border-radius: 4%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
     padding: 5%;
     color: #b6b6de;
     text-shadow: 1px 1px 0px #19194d;
+}
+
+p {
+    padding: 10px;
+}
+
+.content1, .content2, .content3, .content4, ul {
+    list-style: none;
+}
+
+.content1, .content2, .content3, .content4, ul li {
+    padding-top: 5px;
+}
+
+.content1, .content2, .content3, .content4, ul li a {
+    color:#b6b6de;
+    text-decoration:solid;
+
+}
+
+.content1, .content2, .content3, .content4, ul li a:hover {
+    color: #dfdfee;
+
 }
 
 .content2 {
@@ -63,6 +106,18 @@ header nav {
     background-color: #6262b5;
     color: #19194d;
     text-shadow: 0px 0px 0px #6262b5;
+}
+#flexColumns {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.content3 {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 31%;
 }
 
 .content2 > h2 {
@@ -76,6 +131,7 @@ header nav {
     box-sizing: border-box;
     flex: 1 1 20%;
 }
+
 
 footer {
     background-color: #19194d;
