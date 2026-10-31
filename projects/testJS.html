@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob's Blog - Changelog</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="webLogo">
+            <h1>JACOB'S TECH BLOG</h1>
+            <h2>~Documenting my journey~</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../homepage.html">HOME</a></li>
+                <li><a href="projectsListPage.html">PROJECTS</a></li>
+                <li><a href="../goals.html">GOALS</a></li>
+                <li><a href="../changeLog.html">BLOG HISTORY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <p id="demo"></p>
+        <script>
+            let num1 = 1;
+            let num2 = 4;
+            function myFunc(num1, num2) {
+                let sum = num1 + num2;
+                return sum;
+            }
+            document.getElementById("demo").innerHTML = "<h2>" + myFunc(num1,num2) + "</h2>";
+        </script>
+    </div>
+    <footer>
+        <p>Footer Message</p>
+    </footer>
