@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob's Blog - Changelog</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="webLogo">
+            <h1>JACOB'S TECH BLOG</h1>
+            <h2>~Documenting my journey~</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../homepage.html">HOME</a></li>
+                <li><a href="../projectsListPage.html">PROJECTS</a></li>
+                <li><a href="../testJS.html">JAVASCRIPT PLAYGROUND</a></li>
+                <li><a href="../../goals.html">GOALS</a></li>
+                <li><a href="../../changeLog.html">BLOG HISTORY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div class="testGround">
+            <h2>Using HTML Forms for Input in JavaScript</h2>
+            <div class="testCell">
+                <h3>Creating the Basic HTML Form</h3>
+                <div class="code">
+                    <p>index.html</p>
+                    <ol start="12">
+                        <li>&lt;body&gt;</li>
+                        <li style="padding-left: 20px;">&lt;div id="content"&gt;</li>
+                        <li style="padding-left: 40px;">&lt;form&gt;</li>
+                        <li style="padding-left: 80px;"><em>&lt;!-- Form Elements go here --&gt;</em></li>
+                        <li style="padding-left: 80px;">&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;</li>
+                        <li style="padding-left: 80px;">&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;</li>
+                        <li style="padding-left: 80px;">&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;</li>
+                        <li style="padding-left: 80px;">&lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;</li> 
+                        <li style="padding-left: 80px;">&lt;input type="submit" value="Submit"&gt;&lt;br&gt;</li>
+                        <li style="padding-left: 40px;">&lt;/form&gt;</li>
+                        <li style="padding-left: 20px;">&lt;/div&gt;</li>
+                        <li>&lt;/body&gt;</li>
+                    </ol>
+                </div>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <input type="submit" value="Submit"><br>
+                </form>
+            </div>
+            <div class="testCell">
+                <h3>Creating a responsive HTML form with CSS Styling</h3>
+                <div class="code">
+                    <p>style.css</p>
+                    <ol>
+                        <li>#content {</li>
+                        <li style="padding-left: 40px;">background-color: #b6b6de;</li>
+                    </ol>
+                </div>
+                <div id="testForm">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        <input type="submit" value="Submit"><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -132,6 +132,63 @@ p {
     flex: 1 1 20%;
 }
 
+#testGround {
+    margin: 0;
+    background-color: #dfdfee;
+    padding: 1%;
+}
+
+.testCell {
+    padding: 1%;
+    margin: 2%;
+    background-color: #b6b6de;
+    border: #8c8ccc outset 5px;
+    border-radius: 2%;
+}
+
+.testCell .code, #display {
+    font-family: monospace;
+    font-size: large;
+    background-color: #8c8ccc;
+    border: #dfdfee inset 2px;
+    margin: 25px;
+}
+
+.testCell .code p {
+    margin: 0;
+}
+
+#testForm {
+    width: auto;
+    background-color: #8c8ccc;
+}
+
+#content nav {
+    background-color: #b6b6de;
+    border: #8c8ccc outset 5px;
+    border-radius: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#content nav ul {
+    list-style: none;
+}
+
+#content nav ul li a {
+    font-size: large;
+    color: #3E3E81;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#content nav ul li a:hover {
+    background-color: #b6b6de;
+    color: #19194d;
+}
+
 
 footer {
     background-color: #19194d;

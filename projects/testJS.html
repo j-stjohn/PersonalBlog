@@ -19,22 +19,182 @@
             <ul>
                 <li><a href="../homepage.html">HOME</a></li>
                 <li><a href="projectsListPage.html">PROJECTS</a></li>
+                <li><a href="testJS.html">JAVASCRIPT PLAYGROUND</a></li>
                 <li><a href="../goals.html">GOALS</a></li>
                 <li><a href="../changeLog.html">BLOG HISTORY</a></li>
             </ul>
         </nav>
     </header>
     <div id="content">
-        <p id="demo"></p>
-        <script>
-            let num1 = 1;
-            let num2 = 4;
-            function myFunc(num1, num2) {
-                let sum = num1 + num2;
-                return sum;
-            }
-            document.getElementById("demo").innerHTML = "<h2>" + myFunc(num1,num2) + "</h2>";
-        </script>
+        <nav>
+            <h2>JavaScript Experiments</h2>
+            <ul>
+                <li><a href="./jsExp/001.html">Forms for input and JavaScript</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="testGround">
+        <div class="testCell">
+            <h2>JavaScript Operators</h2>
+            <div class="code">
+                <p>function addition() {<br>
+                    let x = 10;<br>
+                    let y = 2;<br>
+                    let z = x + y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function multiplication() {<br>
+                    let x = 5;<br>
+                    let y = 2;<br>
+                    let z = x * y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function subtraction() {<br>
+                    let x = 15;<br>
+                    let y = 7;<br>
+                    let z = x - y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function exponentation() {<br>
+                    let x = 4;<br>
+                    let y = 4;<br>
+                    let z = x ** y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function division() {<br>
+                    let x = 5;<br>
+                    let y = 2;<br>
+                    let z = x * y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function moduls() {<br>
+                    let x = 5;<br>
+                    let y = 2;<br>
+                    let z = x * y;<br>
+                    return z;<br>
+                }<br><br>
+
+                function output() {<br> 
+                    let output = ("Output: " + addition() + "\n" +<br>
+                                "Output: " + multiplication() + "\n" +<br>
+                                "Output: " + subtraction() + "\n" +<br>
+                                "Output: " + exponentiation() + "\n" +<br>
+                                "Output: " + division() + "\n" +<br>
+                                "Output: " + modulus() + "\n"<br>
+                    );<br>
+                return output;<br>
+                }<br>
+                <br>
+                document.getElementById("display").innerText = output();
+                </p>
+            </div>
+            <p id="display1"></p>
+            <script>
+                function addition() {
+                    let x = 10;
+                    let y = 2;
+                    let z = x + y;
+                    return z;
+                }
+
+                function multiplication() {
+                    let x = 5;
+                    let y = 2;
+                    let z = x * y;
+                    return z;
+                }
+
+                function subtraction() {
+                    let x = 15;
+                    let y = 7;
+                    let z = x - y;
+                    return z;
+                }
+
+                function exponentiation(){
+                    let x = 4;
+                    let y = 4;
+                    let z = x ** y;
+                    return z;
+                }
+
+                function division(){
+                    let x = 25;
+                    let y = 5;
+                    let z = x / y;
+                    return z;
+                }
+
+                function modulus(){
+                    let x = 14;
+                    let y = 3;
+                    let z = x % y;
+                    return z;
+                }
+
+                function output(){
+                    let output = ("Output: " + addition() + "\n" +
+                                "Output: " + multiplication() + "\n" +
+                                "Output: " + subtraction() + "\n" +
+                                "Output: " + exponentiation() + "\n" +
+                                "Output: " + division() + "\n" +
+                                "Output: " + modulus() + "\n"
+                );
+                return output;
+                }
+
+                document.getElementById("display1").innerText = output();
+            </script>
+        </div>
+        <div class="testCell">
+            <h2>Binary 2 Decimal Conversion</h2>
+            <p>Here is the code for creating a binary to decimal conversion</p>
+            <p>Version 1 - Compute the number given.</p>
+            <div class="code">
+                function bin2dec() {<br>
+                    let binaryValue = "10111";<br>
+                    let sum = 0;<br>
+                    for (let i = 0; i < binaryValue.length; i++) {<br>
+                        decValue = + (binaryValue[i]);<br>
+                        sum = sum + (decValue * 2 ** (binaryValue.length - (i + 1)));<br>
+<br>
+                    }<br>
+                    return sum;<br>
+                }<br>
+<br>
+                function output() {<br>
+                    output = bin2dec();<br>
+                    return output;<br>
+                }<br><br>
+
+                document.getElementById("display2").innerText = output()<br>
+            </div>
+            <p id="display2"></p>
+            <script>
+                function bin2dec() {
+                    let binaryValue = "10111";
+                    let sum = 0;
+                    for (let i = 0; i < binaryValue.length; i++) {
+                        decValue = + (binaryValue[i]);
+                        sum = sum + (decValue * 2 ** (binaryValue.length - (i + 1)));
+
+                    }
+                    return sum;
+                }
+
+                function output() {
+                    output = "Output: " + bin2dec();
+                    return output;
+                }
+
+                document.getElementById("display2").innerText = output()
+            </script>
+        </div>
     </div>
     <footer>
         <p>Footer Message</p>
