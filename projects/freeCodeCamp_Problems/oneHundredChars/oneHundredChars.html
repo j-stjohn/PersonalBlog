@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob's Blog - freecodecamp.org Challenge: 11/19/26</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="../codecamp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="webLogo">
+            <h1>JACOB'S TECH BLOG</h1>
+            <h2>~Documenting my journey~</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../../homepage.html">HOME</a></li>
+                <li><a href="../../projectsListPage.html">PROJECTS</a></li>
+                <li><a href="../../testJS.html">JAVASCRIPT PLAYGROUND</a></li>
+                <li><a href="../../../goals.html">GOALS</a></li>
+                <li><a href="../../../changeLog.html">BLOG HISTORY</a></li>
+                <li><a href="https://j-stjohn.github.io/80_projects_80_days/index.html">80Prjs-80Days</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="content1">
+            <h3>100 Characters</h3>
+            <p>Welcome to the 100th Daily Coding Challenge!</p><br>
+            <p>Given a string, repeat its characters until the result is exactly 100 characters long. If your repetitions go over 100 characters, trim the extra so it's exactly 100.</p>
+        </div>
+        <div id="codeContainer">
+            <p>Here is where the Python code for the problem will go!</p>
+            <!-- Python code output -->
+            <div class="code">
+                <ol>
+                    <p style="color:gray">Python</p>
+                    <li style="padding-left: 10px;"><F class="comment" style="color:green"># Today's Challenge was quite a simple solution</F></li>
+                    <li style="padding-left: 20px;"><A>def</A> <B>one_hundred</B>(<em>chars</em>):</li>
+                    <li style="padding-left: 30px;"><F class="comment" style="color:green"># iterate a while loop to add chars at least until it reaches 100 chars in length</F></li>
+                    <li style="padding-left: 40px;"><A>while</A> (<B>len</B>(<em>chars</em>) <strong>&lt;</strong> 100):</li>
+                    <li style="padding-left: 50px;"><F class="comment" style="color:green"># add chars to itself</F></li>
+                    <li style="padding-left: 60px;"><em>chars</em> += <em>chars</em></li>
+                    <li style="padding-left: 30px;"><F class="comment" style="color:green"># return chars as output</F></li>
+                    <li style="padding-left: 40px;"><C>return</C> <em>chars</em>[:100]</li>
+                    <li></li>
+                </ol>
+            </div>
+            <br>
+            <div id="Application">
+                <!--Input Container-->
+                <div class="inputContainer">
+                    <!-- input field for character string -->
+                    <label for="char">String to append: </label>
+                    <input type="text" id="char" name="char"><br>
+                    <button id="submitChar">Submit!</button>
+                </div>
+                <!--Output Container-->
+                <div class="outputContainer">
+                    <p id="result">Result will appear here: </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Fingerprint Test on <a href="https://www.freecodecamp.org/learn/daily-coding-challenge/11-17">freecodecamp.org</a></p>
+        <p>Footer Message</p>
+    </footer>
+</body>
+</html>
