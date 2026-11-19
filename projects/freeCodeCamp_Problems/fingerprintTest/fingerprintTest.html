@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob's Blog - Changelog</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="../codecamp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="webLogo">
+            <h1>JACOB'S TECH BLOG</h1>
+            <h2>~Documenting my journey~</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../homepage.html">HOME</a></li>
+                <li><a href="../projectsListPage.html">PROJECTS</a></li>
+                <li><a href="../testJS.html">JAVASCRIPT PLAYGROUND</a></li>
+                <li><a href="../../goals.html">GOALS</a></li>
+                <li><a href="../../changeLog.html">BLOG HISTORY</a></li>
+                <li><a href="https://j-stjohn.github.io/80_projects_80_days/index.html">80Prjs-80Days</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="content1">
+            <h3>Fingerprint Test</h3>
+            <p>Given two strings representing fingerprints, determine if they are a match using the following rules:</p>
+            <ul>
+                <li>Each fingerprint will consist of only lowercase letters <code style="background-color: lightslategray;border: 1px gray solid; border-radius: 5px; text-shadow: 1px 1px 0 black;">'a - z'</code></li>
+                <li>Two fingerprints are only considered a match if:</li>
+                <ol>
+                    <li>Both fingerprints are the same length of characters</li>
+                    <li>A maximum of 10% of the characters can be different between the two strings</li>
+                </ol>
+            </ul>
+        </div>
+        <div id="codeContainer">
+            <p>Here is where the Python code for the problem will go!</p>
+            <div class="code">
+            <ol>
+                <p style="color:gray">Python</p>
+                <li style="padding-left: 20px;"><A>def</A> <B>checkCase</B>(<em>fingerprint_a, fingerprint_b</em>):</li>
+                <li style="padding-left: 40px;"><A>if</A> <B>len</B>(<em>fingerprint_a</em>) <strong>!=</strong> <B>len</B>(<em>fingerprint_b</em>):</li>
+                <li style="padding-left: 60px;"><C>return</C> 0</li>
+                <li style="padding-left: 40px;"><A>else:</A></li>
+                <li style="padding-left: 60px;"><A>if</A> <em>fingerprint_a</em>.<strong>islower()</strong> == <D>True</D> and <em>fingerprint_b</em>.<strong>islower()</strong> == <D>True</D>:</li>
+                <li style="padding-left: 80px;"><C>return</C> 1</li>
+                <li style="padding-left: 40px;"><C>return</C> -1</li>
+                <li></li>
+                <li style="padding-left: 20px;"><A>def</A> <B>is_match</B>(fingerprint_a, fingerprint_b):</li>
+                <li style="padding-left: 40px;"><A>if</A> <B>len</B>(fingerprint_a) != <B>len</B>(fingerprint_b):</li>
+                <li style="padding-left: 60px;"><C>return</C> False</li>
+                <li style="padding-left: 40px;">counter = 0</li>
+                <li style="padding-left: 40px;">iterator = 0</li>
+                <li style="padding-left: 40px;"><A>for</A> i in fingerprint_b:</li>
+                <li style="padding-left: 60px;"><A>if</A> i == fingerprint_a[iterator]:</li>
+                <li style="padding-left: 80px;">counter += 1</li>
+                <li style="padding-left: 40px;">iterator += 1</li>
+                <li style="padding-left: 40px;">matchRate = counter / <B>len</B>(fingerprint_a)</li>
+                <li style="padding-left: 40px;"><A>if</A> matchRate >= 0.9:</li>
+                <li style="padding-left: 60px;"><C>return</C> <D>True</D></li>
+                <li style="padding-left: 40px;"><A>else:</A></li>
+                <li style="padding-left: 60px;"><C>return</C> <D>False</D></li>
+                <li></li>
+                <li style="padding-left: 20px;"><A>def</A> <B>main</B>(fingerprint_a, fingerprint_b):</li>
+                <li style="padding-left: 40px;"><A>if</A> <B>checkCase</B>(fingerprint_a, fingerprint_b) == 1:</li>
+                <li style="padding-left: 60px;"><C>return</C> <B>is_match</B>(fingerprint_a, fingerprint_b)</li>
+            </div>
+        </div>
+        <div id="Application">
+            <div class="inputContainer">
+                <!-- Two input fields for fingerprint strings -->
+                <label for="fingerprintA">Fingerprint A:</label>
+                <input type="text" id="fingerprintA" name="fingerprintA"><br>
+                <label for="fingerprintB">Fingerprint B:</label>
+                <input type="text" id="fingerprintB" name="fingerprintB"><br>
+                <button id="checkMatchButton">Check Match</button>
+            </div>
+            <div class="outputContainer">
+                <p id="result">Result will appear here: </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Fingerprint Test on <a href="https://www.freecodecamp.org/learn/daily-coding-challenge/11-17">freecodecamp.org</a></p>
+        <p>Footer Message</p>
+    </footer>

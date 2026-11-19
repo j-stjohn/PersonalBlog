@@ -58,7 +58,7 @@ header nav {
     margin: 10px;
 }
 
-#content {
+#content, section {
     background-color: #dfdfee;
     color: #19194d;
     padding: 10px;

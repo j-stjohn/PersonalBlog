@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // Given an array and an integer representing how many positions to shift the array, return the shifted array.
+
+            // A positive integer shifts the array to the left.
+            // A negative integer shifts the array to the right.
+            // The shift wraps around the array.
+            function shiftArray(arr, n) {
+                const array = arr;
+                const counter = n;
+                const arraylength = array.length;
+                const shift = ((counter % arraylength) + arraylength) % arraylength;
+                const newArr = new Array(arraylength);
+                for (let i = 0; i < arraylength; i++) {
+                    newArr[i] = array[(i + shift) % arraylength];
+                }
+                return newArr;
+            }
+            function main() {
+                console.log(shiftArray([1, 2, 3], 1));
+            }
+            main();
+        </script>
+    </body>
+</html>
